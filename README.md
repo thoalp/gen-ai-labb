@@ -2,8 +2,10 @@
 
 ### Vad?
 Det här är en labbyta som du snabbt kan sätta upp lokalt eller exempelvis på Streamlit, för att låta 
-användare prova generativa AI-verktyg.  
+användare prova generativa AI-verktyg utan att behöva skapa egna konton.  
 Det enda som behövs är en API-nyckel från OpenAI.  
+
+![Bild som visar labbytan](images/preview.jpg)
 
 ### AI-verktyg?
 Just nu finns det följande verktyg:
