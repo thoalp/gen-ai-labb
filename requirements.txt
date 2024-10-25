@@ -1,0 +1,15 @@
+ffmpeg-python
+openai
+llama_index
+llama-index-llms-openai
+llama-index-embeddings-openai
+pillow
+groq
+streamlit >= 1.39.0
+openpyxl
+nltk
+pydub
+python-docx
+streamlit-audiorecorder
+tiktoken
+supabase
