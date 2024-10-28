@@ -12,7 +12,6 @@ else:
 	client = OpenAI(api_key = environ.get("openai_key"))
 
 
-
 # Whisper OpenAI
 
 def transcribe_with_whisper_openai(file, file_name):

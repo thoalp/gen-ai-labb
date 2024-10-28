@@ -22,8 +22,7 @@ def styling():
     [data-testid="stChatMessageAvatarUser"], [alt="user avatar"] {
         height: 2.8rem;
         width: 2.8rem;
-        border-radius: 8px;
-        
+        border-radius: 8px;    
     }
                 
     [data-testid="stChatMessageAvatarAssistant"], [alt="assistant avatar"] {
@@ -60,7 +59,7 @@ def styling():
                 
     p {
     font-size: 1.1rem;
-}
+    }
 
     </style>
     """, unsafe_allow_html=True)
