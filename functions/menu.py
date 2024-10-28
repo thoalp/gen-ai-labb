@@ -33,7 +33,7 @@ def menu():
         st.sidebar.page_link("pages/chatbot.py", label="Chat", icon=":material/forum:")
         st.sidebar.page_link("pages/image.py", label="Bild", icon=":material/image:")
         st.sidebar.page_link("pages/image_analysis.py", label="Bildanalys", icon=":material/image:")
-        st.sidebar.page_link("pages/chat_with_document.py", label="Chat med dina dokument", icon=":material/description:")
+        st.sidebar.page_link("pages/chat_with_document.py", label="Chatta med dina dokument", icon=":material/description:")
         st.sidebar.page_link("pages/transcribe.py", label="Transkribering", icon=":material/transcribe:")
 
         st.sidebar.markdown("# ")
