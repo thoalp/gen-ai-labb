@@ -1,5 +1,6 @@
 
 import streamlit as st
+import config as c
 
 def update_language():
     # Update session state when the language is changed
@@ -10,6 +11,11 @@ def menu():
     # Check if language is already in session_state, else initialize it with a default value
     if 'language' not in st.session_state:
         st.session_state['language'] = "Svenska"  # Default language
+    
+    if 'app_version' not in st.session_state:
+        st.session_state['app_version'] = c.app_version
+    if 'update_date' not in st.session_state:
+        st.session_state['update_date'] = c.update_date
 
     # Sidebar for language selection
     st.sidebar.selectbox(
