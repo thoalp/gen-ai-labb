@@ -1,7 +1,7 @@
 # GenAI // Labbyta
 
 ### Vad?
-Det här är en labbyta som du snabbt kan sätta upp lokalt eller exempelvis på (Streamlit)[https://streamlit.io/], för att låta användare prova generativa AI-verktyg utan att behöva skapa egna konton.  
+Det här är en labbyta som du snabbt kan sätta upp lokalt eller exempelvis på [Streamlit](https://streamlit.io/), för att låta användare prova generativa AI-verktyg utan att behöva skapa egna konton.  
 Det enda som behövs är en API-nyckel från OpenAI.  
 Den här labbytan är en del av den utbildningsmiljö som jag använder och sätter upp inför exempelvis 
 workshops, masterclasses och annat.
@@ -27,9 +27,9 @@ Dock behöver du en API-nyckel från OpenAI för att kunna använda deras tjäns
 ingenting att göra med ChatGPT, utan är helt separat. Gällande betalning, så sätter man in pengar 
 i förväg och kostnad beräknas på användande.  
 
-- API-nyckel skaffar du på (platform.openai.com)[https://platform.openai.com/]
-- Konto på (GitHub)[https://github.com/] - För att kunna skapa en kopia av koden om du vill köra den online på Streamlit
-- Konto på Streamlit (share.streamlit.io)[https://share.streamlit.io/] - Här kommer du att drifta din labbyta
+- API-nyckel skaffar du på [platform.openai.com](https://platform.openai.com/)
+- Konto på [GitHub](https://github.com/) - För att kunna skapa en kopia av koden om du vill köra den online på Streamlit
+- Konto på Streamlit [share.streamlit.io](https://share.streamlit.io/) - Här kommer du att drifta din labbyta
 
 ### Installation på Streamlit
 - abc
