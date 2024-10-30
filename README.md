@@ -28,11 +28,25 @@ ingenting att göra med ChatGPT, utan är helt separat. Gällande betalning, så
 i förväg och kostnad beräknas på användande.  
 
 - API-nyckel skaffar du på [platform.openai.com](https://platform.openai.com/)
-- Konto på [GitHub](https://github.com/) - För att kunna skapa en kopia av koden om du vill köra den online på Streamlit
-- Konto på Streamlit [share.streamlit.io](https://share.streamlit.io/) - Här kommer du att drifta din labbyta
+- Konto på  - För att kunna skapa en kopia av koden om du vill köra den online på Streamlit
+- Konto på Streamlit  - Här kommer du att drifta din labbyta
 
 ### Installation på Streamlit
-- abc
+Se film
+1. Skapa konto på [GitHub](https://github.com/)
+2. Skapa konto på Streamlit - [share.streamlit.io](https://share.streamlit.io/) - genom att logga in med ditt GitHub-konto. Då kopplas dina konton ihop automatiskt.
+3. Gå till https://github.com/mickekring/gen-ai-labb och klicka på "Fork", så klonas koden till din GitHub.
+4. Gå till [share.streamlit.io](https://share.streamlit.io/) och klicka på "Create App"
+5. Välj "Deploy from a public app from GitHub"
+6. I "Repository", välj den som heter "gen-ai-lab".
+7. "Branch" ska stå på "main".
+8. I "Main file path" väljer du "Start.py"
+9. Vid "App URL" väljer du det domännamn du vill ha till din labbyta, som exempelvis "mittlabb". Då blir adressen mittlabb.streamlit.app 
+10. Klicka på "Advanced settings" och klistra in följande:
+
+openai_key = ""
+pwd_on = "true"
+password = "password123"
 
 ### Installation lokalt på dator
 - abc
