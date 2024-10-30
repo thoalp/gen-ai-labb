@@ -32,7 +32,9 @@ i förväg och kostnad beräknas på användande. Tar pengarna slut, så slutar 
 - Konto på Streamlit  - Här kommer du att drifta din labbyta
 
 ### Installation på Streamlit
-Se film
+
+https://youtu.be/ETlXWefccUw
+
 1. Skapa konto på [GitHub](https://github.com/)
 2. Skapa konto på Streamlit - [share.streamlit.io](https://share.streamlit.io/) - genom att logga in med ditt GitHub-konto. Då kopplas dina konton ihop automatiskt.
 3. Gå till https://github.com/mickekring/gen-ai-labb och klicka på "Fork", så klonas koden till din GitHub.
