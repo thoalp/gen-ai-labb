@@ -48,6 +48,12 @@ openai_key = ""
 pwd_on = "true"  
 password = "password123"  
 ```
+11. Klicka till sist på "Deploy" och vänta tills Streamlit bakat klart din app. Sen är det bara att köra.
+
+### Uppdateringar
+I takt med att jag uppdaterar koden, så kan du uppdatera din app genom att
+1. Gå till din GitHub-sida.
+2. Klicka på "Sync fork" om det finns några uppdateringar.
 
 
 
