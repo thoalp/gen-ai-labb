@@ -32,6 +32,7 @@ i förväg och kostnad beräknas på användande. Tar pengarna slut, så slutar 
 - Konto på Streamlit  - Här kommer du att drifta din labbyta
 
 ### Installation på Streamlit
+I filmen nedan ser du hur installationen går till. I texten under filmen finns alla länkar och övrig information som du behöver. Så använd både film och text.
 
 [![Klicka här för att se instruktionsvideon på Youtube](images/youtube.jpg)](https://youtu.be/ETlXWefccUw)
 
