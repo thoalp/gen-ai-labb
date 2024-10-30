@@ -33,12 +33,7 @@ i förväg och kostnad beräknas på användande. Tar pengarna slut, så slutar 
 
 ### Installation på Streamlit
 
-![](images/youtube.jpg)
-
-[Klicka här för att se instruktionsvideon på Youtube](https://youtu.be/ETlXWefccUw)
-
-[![Instruktionsfilm](images/youtube.jpg)](https://youtu.be/ETlXWefccUw){:target="_blank"}
-
+[![Klicka här för att se instruktionsvideon på Youtube](images/youtube.jpg)](https://youtu.be/ETlXWefccUw){:target="_blank"}
 
 1. Skapa konto på [GitHub](https://github.com/)
 2. Skapa konto på Streamlit - [share.streamlit.io](https://share.streamlit.io/) - genom att logga in med ditt GitHub-konto. Då kopplas dina konton ihop automatiskt.
