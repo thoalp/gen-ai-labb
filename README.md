@@ -28,7 +28,7 @@ ingenting att göra med ChatGPT, utan är helt separat. Gällande betalning, så
 i förväg och kostnad beräknas på användande.  
 
 - API-nyckel skaffar du på [platform.openai.com](https://platform.openai.com/)
-- Konto på  - För att kunna skapa en kopia av koden om du vill köra den online på Streamlit
+- Konto på  GitHub - För att kunna skapa en kopia av koden om du vill köra den online på Streamlit
 - Konto på Streamlit  - Här kommer du att drifta din labbyta
 
 ### Installation på Streamlit
@@ -41,8 +41,8 @@ Se film
 6. I "Repository", välj den som heter "gen-ai-lab".
 7. "Branch" ska stå på "main".
 8. I "Main file path" väljer du "Start.py"
-9. Vid "App URL" väljer du det domännamn du vill ha till din labbyta, som exempelvis "mittlabb". Då blir adressen mittlabb.streamlit.app 
-10. Klicka på "Advanced settings" och klistra in nedanstående. Inom citationstecknen så klistrar du in din API-nyckel till OpenAI och istället för "password123" så sätter du ett eget lösenord för att komma åt sidan. Om du ändrar "pwd_on" till false så krävs inget lösenord för att komma åt sidan.
+9. Vid "App URL" väljer du det domännamn du vill ha till din app, som exempelvis "mittlabb". Då blir adressen mittlabb.streamlit.app 
+10. Klicka på "Advanced settings" och klistra in nedanstående. Inom citationstecknen så klistrar du in din API-nyckel till OpenAI och istället för "password123" så sätter du ett eget lösenord för att komma åt appen. Om du ändrar "pwd_on" till false så krävs inget lösenord för att komma åt appen.
 ```
 openai_key = ""  
 pwd_on = "true"  
@@ -53,7 +53,8 @@ password = "password123"
 ### Uppdateringar
 I takt med att jag uppdaterar koden, så kan du uppdatera din app genom att
 1. Gå till din GitHub-sida.
-2. Klicka på "Sync fork" om det finns några uppdateringar.
+2. Klicka på "Sync fork" om det finns några uppdateringar och klicka på "Update branch".
+3. Gå till share.streamlit.io och klicka på de tre prickarna till höger om din app och välj "Reboot". Då bakas din app om och när det är klart så är din app uppdaterad.
 
 
 
