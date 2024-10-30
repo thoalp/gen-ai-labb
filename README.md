@@ -4,20 +4,20 @@
 Det här är en labbyta som du snabbt kan sätta upp lokalt eller exempelvis på [Streamlit](https://streamlit.io/), för att låta användare prova generativa AI-verktyg utan att behöva skapa egna konton.  
 Det enda som behövs är en API-nyckel från OpenAI.  
 Den här labbytan är en del av den utbildningsmiljö som jag använder och sätter upp inför exempelvis 
-workshops, masterclasses och annat.
+workshops, kurser, masterclasses och annat.
 
 
 ![Bild som visar labbytan](images/preview.jpg)
 
 ### AI-verktyg?
 Just nu finns det följande verktyg:
-- Chat // Chatta med en språkmodell, som GPT-4o från OpenAI eller om du har API från Groq även LLama
-- Bild // Generera bilder med DALL-E 3 från OpenAI
-- Bildanalys // Analysera bilder med GPT-4o från OpenAI
-- Chat med dokument // Enkel RAG för att kunna ladda upp ett eller flera dokument som du kan chatta med
-- Transkribering // Spela in din röst direkt via webbläsaren eller ladda upp ljudfil, så får du den transkriberad till text med Whisper från OpenAI
+- Chat | Chatta med en språkmodell, som GPT-4o från OpenAI eller om du har API från Groq även LLama
+- Bild | Generera bilder med DALL-E 3 från OpenAI
+- Bildanalys | Analysera bilder med GPT-4o från OpenAI
+- Chat med dokument | Enkel [RAG](https://en.wikipedia.org/wiki/Retrieval-augmented_generation) för att kunna ladda upp ett eller flera dokument som du kan chatta med. Använder embeddings-model från OpenAI
+- Transkribering | Spela in din röst direkt via webbläsaren eller ladda upp ljudfil, så får du den transkriberad till text med Whisper från OpenAI
 
-Du kan tänka på det som ett uppstyckat ChatGPT, där de olika delarna är uppdelade i separata tjänster.
+Du kan tänka på labbet som ett uppstyckat ChatGPT, där de olika delarna är uppdelade i separata tjänster.
 
 ## Installation
 
@@ -25,7 +25,7 @@ Du kan tänka på det som ett uppstyckat ChatGPT, där de olika delarna är uppd
 Miljön är kodad i Python med öppen mjukvara, så det finns inga kostnader kopplat till det. Konto på GitHub och Streamlit är också kostnadsfritt.  
 Dock behöver du en API-nyckel från OpenAI för att kunna använda deras tjänster. API-nyckeln har 
 ingenting att göra med ChatGPT, utan är helt separat. Gällande betalning, så sätter man in pengar 
-i förväg och kostnad beräknas på användande.  
+i förväg och kostnad beräknas på användande. Tar pengarna slut, så slutar tjänsten att fungera.  
 
 - API-nyckel skaffar du på [platform.openai.com](https://platform.openai.com/)
 - Konto på  GitHub - För att kunna skapa en kopia av koden om du vill köra den online på Streamlit
@@ -54,7 +54,7 @@ password = "password123"
 I takt med att jag uppdaterar koden, så kan du uppdatera din app genom att
 1. Gå till din GitHub-sida.
 2. Klicka på "Sync fork" om det finns några uppdateringar och klicka på "Update branch".
-3. Gå till share.streamlit.io och klicka på de tre prickarna till höger om din app och välj "Reboot". Då bakas din app om och när det är klart så är din app uppdaterad.
+3. Gå till [share.streamlit.io](https://share.streamlit.io/) och klicka på de tre prickarna till höger om din app och välj "Reboot". Då bakas din app om och när det är klart så är din app uppdaterad.
 
 
 
