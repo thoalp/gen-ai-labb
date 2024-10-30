@@ -33,7 +33,7 @@ i förväg och kostnad beräknas på användande. Tar pengarna slut, så slutar 
 
 ### Installation på Streamlit
 
-!(https://youtu.be/ETlXWefccUw)
+[Se instruktionsvideon på Youtube](https://youtu.be/ETlXWefccUw)
 
 
 1. Skapa konto på [GitHub](https://github.com/)
