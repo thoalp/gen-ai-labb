@@ -43,10 +43,11 @@ Se film
 8. I "Main file path" väljer du "Start.py"
 9. Vid "App URL" väljer du det domännamn du vill ha till din labbyta, som exempelvis "mittlabb". Då blir adressen mittlabb.streamlit.app 
 10. Klicka på "Advanced settings" och klistra in nedanstående. Inom citationstecknen så klistrar du in din API-nyckel till OpenAI och istället för "password123" så sätter du ett eget lösenord för att komma åt sidan. Om du ändrar "pwd_on" till false så krävs inget lösenord för att komma åt sidan.
-
+```
 openai_key = ""  
 pwd_on = "true"  
 password = "password123"  
+```
 
 
 
