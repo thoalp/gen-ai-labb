@@ -44,9 +44,9 @@ Se film
 9. Vid "App URL" väljer du det domännamn du vill ha till din labbyta, som exempelvis "mittlabb". Då blir adressen mittlabb.streamlit.app 
 10. Klicka på "Advanced settings" och klistra in följande:
 
-openai_key = ""
-pwd_on = "true"
-password = "password123"
+openai_key = ""  
+pwd_on = "true"  
+password = "password123"  
 
 ### Installation lokalt på dator
 - abc
