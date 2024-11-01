@@ -85,6 +85,9 @@ Det här är en labbyta som använder amerikanska tjänster, så tänk på vad d
 - Om du inte ser några bilder när du genererat en bild, utan en ikon som ser ut som en trasig bild, kolla att du inte har någon 'ad-blocker' i din webbläsare.
   I vissa fall så tror dessa 'ad-blockers' att bilden du genererat är reklam. Testa även en annan webbläsare för säkerhets skull.
 
+## Uppdateringar
+- 2024-11-01 | La till en ny ljudinspelare på transkriberingssidan som är native i Streamlit.
+
 ## Buggar
 - Inget rapporterat ännu
 
