@@ -53,6 +53,21 @@ password = "password123"
 ```
 11. Klicka till sist på "Deploy" och vänta tills Streamlit bakat klart din app. Sen är det bara att köra.
 
+### Lokal installation
+Om du vill installera labbytan lokalt, så får du klona koden till din hårddisk och köra installation av requirements.txt.  
+Rekommenderat är att du sätter upp en virtuel mijö med venv. 
+Därefter måste du skapa filen /.streamlit/secrets.toml där du lägger in hemligheterna på samma sätt som ovan 
+```
+openai_key = ""  
+pwd_on = "true"  
+password = "password123"  
+```
+
+Sedan kör du igång appen med
+```
+streamlit run Start.py
+```
+
 ### Uppdateringar
 I takt med att jag uppdaterar koden, så kan du uppdatera din app genom att
 1. Gå till din GitHub-sida.
@@ -60,10 +75,15 @@ I takt med att jag uppdaterar koden, så kan du uppdatera din app genom att
 3. Gå till [share.streamlit.io](https://share.streamlit.io/) och klicka på de tre prickarna till höger om din app och välj "Reboot". Då bakas din app om och när det är klart så är din app uppdaterad.
 
 ## Vad får jag göra med koden?
-Du är fri att använda den, modifiera och göra vad du vill med den. I image-mappen finns även photoshopdokumenten för logotyperna. 
+Du är fri att använda den, modifiera och göra vad du vill med den. I image-mappen finns även photoshopdokumenten för logotyperna.  
+Du får också ha lite förbarmande av att koden kan vara av sisådär karaktär. Jag är bara en hobbykodare. 
 
 ## Säkerhet / GDPR
 Det här är en labbyta som använder amerikanska tjänster, så tänk på vad du stoppar in i den. 
+
+## Tips!
+- Om du inte ser några bilder när du genererat en bild, utan en ikon som ser ut som en trasig bild, kolla att du inte har någon 'ad-blocker' i din webbläsare.
+  I vissa fall så tror dessa 'ad-blockers' att bilden du genererat är reklam. Testa även en annan webbläsare för säkerhets skull.
 
 ## Buggar
 - Inget rapporterat ännu
