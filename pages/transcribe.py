@@ -10,7 +10,7 @@ from concurrent.futures import ThreadPoolExecutor
 # External imports
 import streamlit as st
 from openai import OpenAI
-from audiorecorder import audiorecorder
+#from audiorecorder import audiorecorder
 import tiktoken
 
 # Local imports
@@ -70,7 +70,8 @@ if st.session_state["pwd_on"] == "true":
 if st.session_state['language'] == "Svenska":
     page_name = "Transkribering"
     upload_text = "Ladda upp"
-    record_text = "Spela in"
+    rec_text = "Spela in"
+    record_text = "Klicka på mikrofonikonen för att spela in"
     splitting_audio_text = "Delar upp ljudfilen i mindre bitar..."
     transcribing_text = "Transkriberar alla ljudbitar. Det här kan ta ett tag beroende på lång inspelningen är..."
     transcription_done_text = "Transkribering klar!"
@@ -79,7 +80,8 @@ if st.session_state['language'] == "Svenska":
 elif st.session_state['language'] == "English":
     page_name = "Transcribe"
     upload_text = "Upload"
-    record_text = "Record"
+    rec_text = "Record"
+    record_text = "Click on the microfon icon to record"
     splitting_audio_text = "Splitting the audio file into smaller pieces..."
     transcribing_text = "Transcribing all audio pieces. This may take a while depending on how long the recording is..."
     transcription_done_text = "Transcription done!"
@@ -161,7 +163,7 @@ def main():
     
     # CREATE THREE TWO FOR FILE UPLOAD VS RECORDED AUDIO    
 
-    tab1, tab2 = st.tabs([f"{upload_text}", f"{record_text}"])
+    tab1, tab2 = st.tabs([f"{upload_text}", f"{rec_text}"])
 
 
     # FILE UPLOADER
@@ -220,18 +222,14 @@ def main():
     with tab2:
 
         # Creates the audio recorder
-        audio = audiorecorder(start_prompt=f"{record_text}", stop_prompt=f"{record_stop}", pause_prompt="", key=None)
+        audio = st.experimental_audio_input(f"{record_text}")
 
         # The rest of the code in tab2 works the same way as in tab1, so it's not going to be
         # commented.
-        if len(audio) > 0:
-
-            # To save audio to a file, use pydub export method
-            audio.export("data/audio/local_recording.wav", format="wav")
+        if audio:
 
             # Open the saved audio file and compute its hash
-            with open("data/audio/local_recording.wav", 'rb') as file:
-                current_file_hash = compute_file_hash(file)
+            current_file_hash = compute_file_hash(audio)
 
             # If the uploaded file hash is different from the one in session state, reset the state
             if "file_hash" not in st.session_state or st.session_state.file_hash != current_file_hash:
@@ -242,12 +240,11 @@ def main():
                 
             if "transcribed" not in st.session_state:
 
-                with st.spinner(f'{splitting_audio_text}'):
-                    chunk_paths = split_audio_to_chunks("data/audio/local_recording.wav")
-                    #st.write(chunk_paths)
+                with st.status(f'{splitting_audio_text}'):
+                    chunk_paths = split_audio_to_chunks(audio)
 
                 # Transcribe chunks in parallel
-                with st.spinner(f'{transcribing_text}'):
+                with st.status(f'{transcribing_text}'):
                     with ThreadPoolExecutor() as executor:
                         # Open each chunk as a file object and pass it to transcribe_with_whisper_openai
                         transcriptions = list(executor.map(
@@ -257,9 +254,6 @@ def main():
                 
                 # Combine all the transcriptions into one
                 st.session_state.transcribed = "\n".join(transcriptions)
-
-                st.success(f'{transcription_done_text}')
-
 
             token_count = num_tokens_from_string(st.session_state.transcribed, "o200k_base")
             #st.info(f"Antal tokens: {token_count}")

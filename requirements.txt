@@ -10,5 +10,4 @@ openpyxl >= 3.1.5
 nltk >= 3.9.1
 pydub >= 0.25.1
 python-docx >= 1.1.2
-streamlit-audiorecorder >= 0.0.5
 tiktoken >= 0.8.0

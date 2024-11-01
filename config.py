@@ -9,7 +9,7 @@ page_title = "GenAI - Labb"
 site_title = "GenAI - Labb"
 
 
-app_version = "1.1.3"
-update_date = "2024-10-30"
+app_version = "1.2.0"
+update_date = "2024-11-01"
 
 deployment = "streamlit" # docker streamlit
