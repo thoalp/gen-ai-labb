@@ -75,7 +75,8 @@ I takt med att jag uppdaterar koden, så kan du uppdatera din app genom att
 3. Gå till [share.streamlit.io](https://share.streamlit.io/) och klicka på de tre prickarna till höger om din app och välj "Reboot". Då bakas din app om och när det är klart så är din app uppdaterad.
 
 ## Vad får jag göra med koden?
-Du är fri att använda den, modifiera och göra vad du vill med den. I image-mappen finns även photoshopdokumenten för logotyperna. 
+Du är fri att använda den, modifiera och göra vad du vill med den. I image-mappen finns även photoshopdokumenten för logotyperna.  
+Du får också ha lite förbarmande av att koden kan vara av sisådär karaktär. Jag är bara en hobbykodare. 
 
 ## Säkerhet / GDPR
 Det här är en labbyta som använder amerikanska tjänster, så tänk på vad du stoppar in i den. 
