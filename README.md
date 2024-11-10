@@ -86,6 +86,7 @@ Det här är en labbyta som använder amerikanska tjänster, så tänk på vad d
   I vissa fall så tror dessa 'ad-blockers' att bilden du genererat är reklam. Testa även en annan webbläsare för säkerhets skull.
 
 ## Uppdateringar
+- 2024-11-10 | Uppdaterad Streamlit ledde till uppdaterad ljudinspelare. Minifix CSS gällande menyn.
 - 2024-11-01 | La till en ny ljudinspelare på transkriberingssidan som är native i Streamlit.
 
 ## Buggar
