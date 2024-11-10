@@ -222,7 +222,7 @@ def main():
     with tab2:
 
         # Creates the audio recorder
-        audio = st.experimental_audio_input(f"{record_text}")
+        audio = st.audio_input(f"{record_text}")
 
         # The rest of the code in tab2 works the same way as in tab1, so it's not going to be
         # commented.

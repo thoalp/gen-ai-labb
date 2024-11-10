@@ -45,10 +45,6 @@ def styling():
         padding-bottom: 0rem;
     }
                 
-    .stPageLink {
-    margin-bottom: -12px;
-    }
-                
     [data-testid="stPageLink-NavLink"] p {
     font-size: 1rem !important;
     }
@@ -63,4 +59,3 @@ def styling():
 
     </style>
     """, unsafe_allow_html=True)
-
