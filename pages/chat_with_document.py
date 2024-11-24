@@ -1,3 +1,5 @@
+
+# External imports
 import streamlit as st
 from llama_index.core import VectorStoreIndex, ServiceContext, Document, SimpleDirectoryReader
 from llama_index.core.llms import ChatMessage
@@ -6,12 +8,16 @@ from llama_index.core import PromptTemplate
 from llama_index.llms.openai import OpenAI
 from llama_index.embeddings.openai import OpenAIEmbedding
 from llama_index.core.node_parser import SentenceSplitter
+
+# Python imports
 from PIL import Image
 from uuid import uuid4
-
 import os
 from os import environ
 import hmac
+import shutil
+
+# Local imports
 from functions.styling import page_config, styling
 import config as c
 from functions.menu import menu
@@ -201,7 +207,7 @@ def load_data(user_data_folder):
             llm=llm,
             embed_model=embed_model,
             show_progress=True)
-        
+                
         return index    
 
 
@@ -246,6 +252,8 @@ if "messages" not in st.session_state.keys():
 
 if uploaded_files:
     index = load_data(user_data_folder)
+    
+    shutil.rmtree(user_data_folder)  # Remove the entire directory
 
 
     query_engine = index.as_query_engine(
